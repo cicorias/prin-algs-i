@@ -1,0 +1,11 @@
+{
+    "java.checkstyle.configuration": "${workspaceFolder}/meta/checkstyle-coursera.xml",
+    "java.checkstyle.modules": [
+        "${workspaceFolder}/meta/checkstyle-lift.jar"
+    ],
+    "java.checkstyle.version": "8.31",
+    "java.checkstyle.properties": {
+        "basedir": "${workspaceFolder}/src",
+        "suppresions" : "${workspaceFolder}/meta/checkstyle-suppressions.xml"
+    }
+}
