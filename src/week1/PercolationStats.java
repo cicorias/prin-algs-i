@@ -25,8 +25,8 @@ public class PercolationStats {
     }
 
     // high endpoint of 95% confidence interval
-    public double confidenceHi() throws Exception {
-        throw new Exception("not implememnted");
+    public double confidenceHi() {
+        throw new UnsupportedOperationException("not implememnted");
     }
 
    // test client (see below)
