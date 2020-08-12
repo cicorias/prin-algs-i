@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # this must match the install directory
-LIFT_LIB="/usr/local/lift/lib"
+LIFT_LIB=${LIFT_LIB:-"/usr/local/lift/lib"}
 
 # set classpath to include the textbook libraries
-CLASSPATH=".:${LIFT_LIB}/algs4.jar"
+CLASSPATH=".:${LIFT_LIB}/algs4.jar:${LIFT_LIB}/stdlib.jar"
 
 # compile on Windows/Linux using "javac" but on OS X using "java_home -exec javac"
 JAVAC="javac"
-# if [ -f /usr/libexec/java_home ]; then
-#     JAVAC="/usr/libexec/java_home -exec javac"
-# fi
+if [ -f /usr/libexec/java_home ]; then
+    JAVAC="/usr/libexec/java_home -exec javac"
+fi
 
 # abort if javac command does not exist
 if ! [ "$(command -v $JAVAC)" ]; then
