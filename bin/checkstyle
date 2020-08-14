@@ -9,7 +9,7 @@ usage() {
 }
 
 # This must match the install directory
-LIFT_INSTALL="/usr/local/lift"
+LIFT_INSTALL=${LIFT_INSTALL:-"/usr/local/lift"}
 
 # execute on Windows/Linux using "java" but on OS X using "java_home -exec java"
 JAVA="java"
@@ -29,6 +29,7 @@ SUPPRESSIONS_XML="${LIFT_INSTALL}/checkstyle-suppressions.xml"
 
 # set base directory to current working directory
 BASEDIR=$(pwd -P)
+echo "using basedir: ${BASEDIR}"
 
 # If there are no arguments
 if [ ! -n "$1" ]; then

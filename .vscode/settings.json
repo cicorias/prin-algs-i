@@ -1,11 +1,13 @@
-{
-    "java.checkstyle.configuration": "${workspaceFolder}/meta/checkstyle-coursera.xml",
-    "java.checkstyle.modules": [
-        "${workspaceFolder}/meta/checkstyle-lift.jar"
-    ],
+{   
+    "java.trace.server": "verbose",
     "java.checkstyle.version": "8.31",
+    "java.checkstyle.configuration": "${workspaceFolder}/lib/checkstyle-coursera.xml",
     "java.checkstyle.properties": {
-        "basedir": "${workspaceFolder}/src",
-        "suppresions" : "${workspaceFolder}/meta/checkstyle-suppressions.xml"
-    }
+        "basedir": "${workspaceFolder}",
+        "suppressions" : "${workspaceFolder}/lib/checkstyle-suppressions.xml"
+    },
+    "java.checkstyle.modules": [
+        "${workspaceFolder}/lib/checkstyle-8.31/checkstyle-8.31-all.jar",
+        "${workspaceFolder}/lib/checkstyle-8.31/checkstyle-lift.jar"
+    ]
 }
