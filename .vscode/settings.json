@@ -1,7 +1,8 @@
 {   
-    "java.trace.server": "verbose",
-    "java.checkstyle.version": "8.31",
-    "java.checkstyle.configuration": "${workspaceFolder}/lib/checkstyle-coursera.xml",
+    "java.trace.server":"verbose",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.checkstyle.version": "8.35",
+    "java.checkstyle.configuration": "https://scicoria.blob.core.windows.net/public/google_checks_local.xml",
     "java.checkstyle.properties": {
         "basedir": "${workspaceFolder}",
         "suppressions" : "${workspaceFolder}/lib/checkstyle-suppressions.xml"
