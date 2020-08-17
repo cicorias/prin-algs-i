@@ -31,7 +31,7 @@ public class PercolationStats {
 
    // test client (see below)
    public static void main(String[] args) {
-
+        System.out.println("foobar");
    }
 
 }
