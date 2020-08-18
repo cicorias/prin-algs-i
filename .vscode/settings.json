@@ -2,9 +2,9 @@
     "java.trace.server":"verbose",
     "java.configuration.checkProjectSettingsExclusions": true,
     "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
+        "**/.classpath": false,
+        "**/.project": false,
+        "**/.settings": false,
+        "**/.factorypath": false
     }
 }
